@@ -22,3 +22,10 @@
 
 https://www.ykicchan.dev/posts/2020-07-12
 https://yuru-wota.hateblo.jp/entry/GAS/Create-Project-via-Clasp
+
+# yarnを使う場合
+
+```shell
+rm -rf .yarn*
+yarn install
+```
