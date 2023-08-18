@@ -17,3 +17,8 @@
     }
     ```
 5. appsscript.jsonをdistへ移動する
+
+参考：
+
+https://www.ykicchan.dev/posts/2020-07-12
+https://yuru-wota.hateblo.jp/entry/GAS/Create-Project-via-Clasp
