@@ -27,5 +27,6 @@ https://yuru-wota.hateblo.jp/entry/GAS/Create-Project-via-Clasp
 
 ```shell
 rm -rf .yarn*
+yarn set version stable
 yarn install
 ```
