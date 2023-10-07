@@ -25,16 +25,16 @@ https://yuru-wota.hateblo.jp/entry/GAS/Create-Project-via-Clasp
 
 # yarnを使う場合
 
-- .yarnrc.ymlを編集する
-
-```shell
-nodeLinker: node-modules # 追加
-```
-
 - ライブラリをインストール
 
 ```shell
 rm -rf .yarn*
 yarn set version berry
 yarn install
+```
+
+- .yarnrc.ymlを編集する
+
+```shell
+nodeLinker: node-modules # 追加
 ```
