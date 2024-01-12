@@ -1,4 +1,7 @@
-## GASを有効化
+## claspをインストール
+https://github.com/google/clasp?tab=readme-ov-file
+
+-  GASを有効化
 https://script.google.com/home/usersettings
 
 # 既存のスプレッドシートを使用する場合
