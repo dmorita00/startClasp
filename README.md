@@ -45,18 +45,18 @@ https://yuru-wota.hateblo.jp/entry/GAS/Create-Project-via-Clasp
 
 # yarnを使う場合
 
-- ライブラリをインストール
-
+1. 設定
 ```shell
 rm -rf .yarn*
 yarn set version berry
-yarn install
 ```
-
-- .yarnrc.ymlを編集する
-
+2. .yarnrc.ymlを編集する
 ```shell
 nodeLinker: node-modules # 追加
+```
+3. インストールする
+```
+yarn install
 ```
 
 ## GAS GCP連携
