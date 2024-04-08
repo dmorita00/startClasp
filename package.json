@@ -1,10 +1,9 @@
 {
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn build && clasp push && clasp deploy -i $(grep 'PROJECT_ID' .env | cut -d '=' -f 2)",
+    "deploy": "yarn build && clasp push --auth ./.clasprc.json && clasp deploy -i $(grep 'PROJECT_ID' .env | cut -d '=' -f 2) --auth ./.clasprc.json",
     "lint": "eslint --fix --ext .ts,.js --ignore-path .gitignore ."
   },
-  "packageManager": "yarn@4.0.1",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-typescript": "^7.22.5",

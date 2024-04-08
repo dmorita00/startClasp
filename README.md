@@ -4,33 +4,40 @@ https://github.com/google/clasp?tab=readme-ov-file
 -  GASを有効化
 https://script.google.com/home/usersettings
 
-# 既存のスプレッドシートを使用する場合
-
+## 準備
 1. ログインする（CLI）
     ```shell
     clasp login
     ```
-2. envファイルを作る
-    ```shell
-    cp .env.template .env
-    ```
-3. スプレッドシートを作成する（ブラウザ）
-4. GASを作成する（ブラウザ）
-5. デプロイする（ブラウザ）
-   1. Webappを選択する
-   2. DeploymentIDをenvに貼り付ける
-6. cloneする（CLI）
+2. clasprc.jsonをプロジェクトルートに移動させる
+   ```
+   cp /Users/username/.clasprc.json ./
+   ```
+
+## 既存のファイルを使用する場合
+1. cloneする（CLI）
     ```shell
     clasp clone <スクリプトファイルのURL>
     ```
-7. clasp.jsonを編集する
+2. clasp.jsonを編集する
     ```json
     {
         "scriptId":"<スクリプトID>",
         "rootDir":"./dist"
     }
     ```
-8. appsscript.jsonをdistへ移動する
+3.  appsscript.jsonをdistへ移動する
+
+## デプロイする場合
+1. envファイルを作る
+    ```shell
+    cp .env.template .env
+    ```
+2. スプレッドシートを作成する（ブラウザ）
+3. GASを作成する（ブラウザ）
+4. デプロイする（ブラウザ）
+   1. Webappを選択する
+   2. DeploymentIDをenvに貼り付ける
 
 参考：
 https://www.ykicchan.dev/posts/2020-07-12
