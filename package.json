@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack",
-    "deploy": "yarn build && clasp push --auth ./.clasprc.json && clasp deploy -i $(grep 'PROJECT_ID' .env | cut -d '=' -f 2) --auth ./.clasprc.json",
+    "push": "npm run build && clasp push --auth ./.clasprc.json",
+    "deploy": "npm run push && clasp deploy -i $(grep 'PROJECT_ID' .env | cut -d '=' -f 2) --auth ./.clasprc.json",
     "lint": "eslint --fix --ext .ts,.js --ignore-path .gitignore ."
   },
   "devDependencies": {
